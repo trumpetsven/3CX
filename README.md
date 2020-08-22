@@ -3,6 +3,8 @@ This Script is for polling the currently active interal and external telephone c
 
 ![Screenshot](/screenshot.png)
 
+Originally I posted the script over here: https://www.3cx.com/community/threads/snmp-monitoring-in-consideration.43595/page-7
+
 # Installation
 
 * Install perl on your PRTG probe (for Windows I used http://strawberryperl.com/ portable edition)
