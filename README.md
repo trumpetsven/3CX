@@ -1,5 +1,5 @@
 # What is it
-This Script is for polling the currently active interal and external calls on a 3CX PBX https://www.3cx.com with PRTG Network Monitor https://www.paessler.com/prtg
+This Script is for polling the currently active interal and external telephone calls on a 3CX PBX https://www.3cx.com with PRTG Network Monitor https://www.paessler.com/prtg
 
 ![Screenshot](/screenshot.png)
 
