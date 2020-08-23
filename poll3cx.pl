@@ -54,7 +54,7 @@ if ($client->responseContent() eq 'AuthSuccess')
 }
 else
 {
-	# print ": ERROR - Login failed\n";
+	# print ": ERROR - Login failed >".$client->responseContent()."<\n";
   exit 1;
 }
 
