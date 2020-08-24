@@ -13,6 +13,7 @@ Originally I posted the script over here: https://www.3cx.com/community/threads/
   * type `perl -MCPAN -e shell`
   * and on the CPAN Prompt `install REST::Client`
 * Copy the batch (poll3cx.bat) and perl script (poll3cx.pl) to `c:\Program Files (x86)\PRTG Network Monitor\Custom Sensors\EXEXML\`
+* Adjust the server, login and password in the perl script. HINT: Since 3CX supports only 1 concurrent session on the webinterface create a dedicated user the script uses.
 * Create a new XML REST Sensor https://www.paessler.com/manuals/prtg/http_xmlrest_value_sensor and point to the batch
 
 # Verification
