@@ -5,8 +5,12 @@ use warnings;
 use Data::Dumper;
 use REST::Client;
 use JSON;
+# use IO::Socket::SSL qw( SSL_VERIFY_NONE ); # Uncomment this to skip SSL verification
 
 my $client = REST::Client->new();
+# $client->getUseragent()->ssl_opts(verify_hostname => 0); # Uncomment this to skip SSL verification
+# $client->getUseragent()->ssl_opts(SSL_verify_mode => SSL_VERIFY_NONE); # Uncomment this to skip SSL verification
+
 my $result = "";
 $client->setHost('https://pbx.yourdomain.com');
 $client->addHeader('Accept', 'application/json');
@@ -23,6 +27,8 @@ if ($client->responseContent() eq 'AuthSuccess')
   # print ": login ok\n";
   $client->GET('/api/activeCalls');
   my $pbxdata = from_json($client->responseContent());
+  
+  # print Dumper $pbxdata;
 	
   $req = '{}';
   $client->POST('/api/logout', $req);
